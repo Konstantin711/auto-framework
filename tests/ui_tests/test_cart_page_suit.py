@@ -1,8 +1,8 @@
 import allure
 import pytest
 
-from ...page_objects.computer_product_page import ComputerProductPage
-from ...utilities.waiters import wait_until
+from page_objects.computer_product_page import ComputerProductPage
+from utilities.waiters import wait_until
 
 
 @allure.title('Successful order of product')

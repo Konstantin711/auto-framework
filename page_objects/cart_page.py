@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 from .order_status_page import OrderStatus
-from ..page_objects.base_page import BasePage
+from page_objects.base_page import BasePage
 
 
 class CartPage(BasePage):

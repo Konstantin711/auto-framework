@@ -2,8 +2,8 @@ import random
 
 from selenium.webdriver.common.by import By
 
-from ..page_objects.base_page import BasePage
-from ..page_objects.register_result_page import RegisterResultPage
+from page_objects.base_page import BasePage
+from page_objects.register_result_page import RegisterResultPage
 
 
 class RegisterPage(BasePage):

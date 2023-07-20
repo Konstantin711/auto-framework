@@ -1,8 +1,8 @@
 from selenium.webdriver.common.by import By
 
 from .password_recovery_page import PasswordRecovery
-from ..page_objects.base_page import BasePage
-from ..page_objects.register_page import RegisterPage
+from page_objects.base_page import BasePage
+from page_objects.register_page import RegisterPage
 
 
 class LoginPage(BasePage):
@@ -30,7 +30,7 @@ class LoginPage(BasePage):
     def click_login_button(self):
         self._click_to_element(self.__log_in_button)
 
-        from ..page_objects.main_page import MainPage
+        from page_objects.main_page import MainPage
         return MainPage(self._driver)
 
     def click_register_button(self):

@@ -1,11 +1,11 @@
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
-from ..page_objects.base_page import BasePage
+from page_objects.base_page import BasePage
 from .login_page import LoginPage
 from .search_page import SearchPage
-from ..page_objects.static_elements.header_element import Header
-from ..page_objects.static_elements.header_navigation import HeaderNavigation
+from page_objects.static_elements.header_element import Header
+from page_objects.static_elements.header_navigation import HeaderNavigation
 from .computer_page import ComputerPage
 
 

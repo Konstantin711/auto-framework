@@ -6,14 +6,14 @@ import allure
 import pytest
 import random
 
-from .page_objects.customer_info_page import CustomerInfoPage
-from .page_objects.register_page import RegisterPage
-from .page_objects.search_page import SearchPage
-from .page_objects.login_page import LoginPage
-from .page_objects.main_page import MainPage
-from .page_objects.computer_page import ComputerPage
-from .utilities.config_json_parser import JsonParser
-from .utilities.browsers_factory import browsers_factory
+from page_objects.customer_info_page import CustomerInfoPage
+from page_objects.register_page import RegisterPage
+from page_objects.search_page import SearchPage
+from page_objects.login_page import LoginPage
+from page_objects.main_page import MainPage
+from page_objects.computer_page import ComputerPage
+from utilities.config_json_parser import JsonParser
+from utilities.browsers_factory import browsers_factory
 
 
 @pytest.fixture
@@ -50,7 +50,7 @@ def pytest_runtest_makereport(item, call):
 
 @pytest.fixture(scope='session', autouse=True)
 def config_data():
-    __CONFIG_PATH = os.path.abspath('lesson_19/configurations/config.json')
+    __CONFIG_PATH = os.path.abspath('../../configurations/config.json')
 
     with open(__CONFIG_PATH, 'r') as file:
         json_obj = json.loads(file.read())

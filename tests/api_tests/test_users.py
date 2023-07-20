@@ -2,8 +2,8 @@ from http import HTTPStatus
 
 import allure
 import pytest
-from ...api_module.api_collections.users_collection import UsersAPI
-from ...data_objects.person_data import PersonData
+from api_module.api_collections.users_collection import UsersAPI
+from data_objects.person_data import PersonData
 
 
 @allure.title('Check len of users on page')
